@@ -20,7 +20,7 @@ public:
 protected:
 	//CMy2DObject13 figure;
 	std::vector<CMy2DObject13*> m_Objects;
-	int m_nCacthed;
+	int m_nCatched;
 	//int m_bCatched;
 	CPoint m_MousePos;
 	int FindObject(CPoint point);

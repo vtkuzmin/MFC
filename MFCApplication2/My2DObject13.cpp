@@ -37,8 +37,6 @@ void CMy2DObject13::Draw(CDC &dc) {
 	int x = m_centr.m_x;
 	int y = m_centr.m_y;
 
-	//x = x1*cos(m_dAngle) + y1*sin(m_dAngle); //сделаем обратное вращение точки
-	//y = y1*cos(m_dAngle) - x1*sin(m_dAngle);
 
 	dc.MoveTo((-A / 2 + A2)*cos(m_dAngle) - (A / 2)*sin(m_dAngle)+x,-( (A / 2)*cos(m_dAngle)+ (-A / 2 + A2)*sin(m_dAngle))+y);
 	dc.LineTo((A / 2 )*cos(m_dAngle) - (A / 2)*sin(m_dAngle) + x, -((A / 2)*cos(m_dAngle) + (A / 2)*sin(m_dAngle)) + y);
@@ -50,18 +48,7 @@ void CMy2DObject13::Draw(CDC &dc) {
 	dc.LineTo((-A / 2)*cos(m_dAngle) - (A / 2 - A2)*sin(m_dAngle) + x, -((A / 2 - A2)*cos(m_dAngle) + (-A / 2)*sin(m_dAngle)) + y);
 	dc.LineTo((-A / 2+A2)*cos(m_dAngle) - (A / 2 - A2)*sin(m_dAngle) + x,-( (A / 2 - A2)*cos(m_dAngle) + (-A / 2+A2)*sin(m_dAngle)) + y);
 	dc.LineTo((-A / 2 + A2)*cos(m_dAngle) - (A / 2)*sin(m_dAngle) + x, -((A / 2)*cos(m_dAngle) + (-A / 2 + A2)*sin(m_dAngle)) + y);
-	/*
-	dc.MoveTo(x - A / 2 + A2, y - A / 2);
-	dc.LineTo(x + A / 2, y - A / 2);
-	dc.LineTo(x + A / 2, y - A1);
-	dc.AngleArc(x + A / 2, y, A1, 90, 180);
-	dc.LineTo(x + A / 2, y + A / 2);
-	dc.LineTo(x - A / 2 + A3, y + A / 2);
-	dc.AngleArc(x - A / 2, y + A / 2, A3, 0, 90);
-	dc.LineTo(x - A / 2, y - A / 2 + A2);
-	dc.LineTo(x - A / 2 + A2, y - A / 2 + A2);
-	dc.LineTo(x - A / 2 + A2, y - A / 2);
-	*/
+	
 }
 
 void CMy2DObject13::setA(double a) {

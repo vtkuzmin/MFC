@@ -17,7 +17,7 @@
 
 CChildView::CChildView()
 {
-	m_nCacthed = -1;
+	m_nCatched = -1;
 }
 
 CChildView::~CChildView()
@@ -84,27 +84,7 @@ void CChildView::OnPaint()
 	}
 	dc.BitBlt(0, 0, rect.Width(), rect.Height(), &dcMem, 0, 0, SRCCOPY);
 	dcMem.SelectObject(pOldBmp);
-	/*
-	double x = figure.Get_centr().m_x;
-	double y = figure.Get_centr().m_y;
-	double A = figure.GetA();
-	double A1 = figure.GetA1();
-	double A2 = figure.GetA2();
-	double A3 = figure.GetA3();
 
-	dc.MoveTo(x - A/2 + A2,y - A/2);
-	dc.LineTo(x+A/2,y-A/2);
-	dc.LineTo(x+A/2,y-A1);
-	dc.AngleArc(x+A/2,y,A1,90,180);
-	dc.LineTo(x+A/2,y+A/2);
-	dc.LineTo(x-A/2+A3,y+A/2);
-	dc.AngleArc(x-A/2,y+A/2,A3,0,90);
-	dc.LineTo(x-A/2,y-A/2+A2);
-	dc.LineTo(x-A/2+A2,y-A/2+A2);
-	dc.LineTo(x-A/2+A2,y-A/2);
-
-	*/
-	// Не вызывайте CWnd::OnPaint() для сообщений рисования
 }
 	
 int CChildView::FindObject(CPoint point) {
@@ -121,21 +101,12 @@ void CChildView::OnLButtonDown(UINT nFlags, CPoint point)
 {
 	// TODO: добавьте свой код обработчика сообщений или вызов стандартного
 
-	m_nCacthed = FindObject(point);
-	if (m_nCacthed >= 0) {
+	m_nCatched = FindObject(point);
+	if (m_nCatched >= 0) {
 		m_MousePos = point;
 		SetCapture();
 	}
-	/*
-	double y = figure.Get_centr().m_y;
-	if (figure.IsInside(point.x, -point.y + 2 * y)) {
-		m_bCatched = true;
-		m_MousePos = point;
-		SetCapture();
-	}
-	//	AfxMessageBox(_T("Success"));
-	//else AfxMessageBox(_T("Fail"));
-	*/
+	
 	CWnd::OnLButtonDown(nFlags, point);
 	
 }
@@ -144,22 +115,19 @@ void CChildView::OnLButtonDblClk(UINT nFlags, CPoint point)
 {
 	// TODO: добавьте свой код обработчика сообщений или вызов стандартного
 	
-	m_nCacthed = FindObject(point);
-	if (m_nCacthed >= 0) {
-		//m_MousePos = point;
-		//SetCapture();
-		//m_Objects[m_nCacthed]->
+	m_nCatched = FindObject(point);
+	if (m_nCatched >= 0) {
 	
-		CDlgProperties Dlg(m_Objects[m_nCacthed]->GetA1(), m_Objects[m_nCacthed]->GetA(), 
-			m_Objects[m_nCacthed]->GetA2(), m_Objects[m_nCacthed]->GetA3(), m_Objects[m_nCacthed]->Get_Angle());
+		CDlgProperties Dlg(m_Objects[m_nCatched]->GetA1(), m_Objects[m_nCatched]->GetA(), 
+			m_Objects[m_nCatched]->GetA2(), m_Objects[m_nCatched]->GetA3(), m_Objects[m_nCatched]->Get_Angle());
 		if(Dlg.DoModal()) {
-			m_Objects[m_nCacthed]->setA1(Dlg.m_A1);
-			m_Objects[m_nCacthed]->setA(Dlg.m_A);
-			m_Objects[m_nCacthed]->setA2(Dlg.m_A2);
-			m_Objects[m_nCacthed]->setA3(Dlg.m_A3);
-			m_Objects[m_nCacthed]->setAngle(Dlg.m_Angle);
+			m_Objects[m_nCatched]->setA1(Dlg.m_A1);
+			m_Objects[m_nCatched]->setA(Dlg.m_A);
+			m_Objects[m_nCatched]->setA2(Dlg.m_A2);
+			m_Objects[m_nCatched]->setA3(Dlg.m_A3);
+			m_Objects[m_nCatched]->setAngle(Dlg.m_Angle);
 			Invalidate();
-			m_nCacthed = -1;
+			m_nCatched = -1;
 			ReleaseCapture();
 		}
 	}
@@ -167,14 +135,12 @@ void CChildView::OnLButtonDblClk(UINT nFlags, CPoint point)
 }
 
 
-
 void CChildView::OnLButtonUp(UINT nFlags, CPoint point)
 {
 	// TODO: добавьте свой код обработчика сообщений или вызов стандартного
-	m_nCacthed = -1;
-
-
+	m_nCatched = -1;
 	ReleaseCapture();
+	Invalidate();
 	
 	CWnd::OnLButtonUp(nFlags, point);
 }
@@ -183,13 +149,13 @@ void CChildView::OnLButtonUp(UINT nFlags, CPoint point)
 void CChildView::OnMouseMove(UINT nFlags, CPoint point)
 {
 	// TODO: добавьте свой код обработчика сообщений или вызов стандартного
-	if (m_nCacthed >=0) {
+	if (m_nCatched >=0) {
 		CRect rect;
 		GetClientRect(&rect);
 		point.x = min(rect.right, max(rect.left, point.x));
 		point.y = min(rect.bottom, max(rect.top, point.y));
 		CPoint Delta = point - m_MousePos;
-		m_Objects[m_nCacthed]->Move(Delta.x, Delta.y);
+		m_Objects[m_nCatched]->Move(Delta.x, Delta.y);
 		m_MousePos = point;
 		Invalidate();
 	}
@@ -198,6 +164,9 @@ void CChildView::OnMouseMove(UINT nFlags, CPoint point)
 }
 
 void CChildView::OnNewFigure() {
+
+	srand(time(NULL));
+
 	CRect rect;
 	GetClientRect(&rect);
 	double x = rand()%rect.Width();
@@ -216,15 +185,10 @@ void CChildView::OnNewFigure() {
 
 BOOL CChildView::OnMouseWheel(UINT nFlags, short zDelta, CPoint pt)
 {
-	int m_nCacthed2 = -1;
-	m_nCacthed2 = FindObject(pt);
-	if (m_nCacthed2 >= 0) {
-		m_MousePos = pt;
-		m_Objects[m_nCacthed2]->setAngle(m_Objects[m_nCacthed2]->Get_Angle() + zDelta/100.0);
+	if (m_nCatched >= 0) {
+		m_Objects[m_nCatched]->Rotate((zDelta*M_PI)/180.0);
 		Invalidate();
-		
 	}
-	// TODO: добавьте свой код обработчика сообщений или вызов стандартного
 
 	return CWnd::OnMouseWheel(nFlags, zDelta, pt);
 }

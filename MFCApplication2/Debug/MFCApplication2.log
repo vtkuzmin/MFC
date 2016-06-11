@@ -1,36 +1,29 @@
-﻿Сборка начата 09.06.2016 19:57:40.
-     1>Проект "H:\Прога MFC\03.06.16\MFCApplication2\MFCApplication2\MFCApplication2.vcxproj" в узле 2 (целевые объекты Build).
+﻿Сборка начата 11.06.2016 18:50:28.
+     1>Проект "C:\Users\Вадим\Documents\GitHub\MFC\MFCApplication2\MFCApplication2.vcxproj" в узле 2 (целевые объекты Build).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\MFCApplication2.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\MFCApplication2.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt C2DMyPoint.cpp ChildView.cpp CDlgProperties.cpp MainFrm.cpp MFCApplication2.cpp My2DObject13.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\MFCApplication2.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ChildView.cpp My2DObject13.cpp
          My2DObject13.cpp
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(37): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(38): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(43): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(44): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(45): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(46): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(46): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(47): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(48): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(49): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(49): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(50): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(51): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\my2dobject13.cpp(52): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
-         MFCApplication2.cpp
-         MainFrm.cpp
-         CDlgProperties.cpp
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(37): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(38): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(41): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(42): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(43): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(44): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(44): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(45): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(46): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(47): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(47): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(48): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(49): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\my2dobject13.cpp(50): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
          ChildView.cpp
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\childview.cpp(25): warning C4018: <: несоответствие типов со знаком и без знака
-     1>h:\прога mfc\03.06.16\mfcapplication2\mfcapplication2\childview.cpp(82): warning C4018: <: несоответствие типов со знаком и без знака
-         C2DMyPoint.cpp
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\childview.cpp(25): warning C4018: <: несоответствие типов со знаком и без знака
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\childview.cpp(82): warning C4018: <: несоответствие типов со знаком и без знака
+     1>c:\users\вадим\documents\github\mfc\mfcapplication2\childview.cpp(168): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
          Создание кода...
-       ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0419" /IDebug\ /nologo /fo"Debug\MFCApplication2.res" MFCApplication2.rc 
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"H:\Прога MFC\03.06.16\MFCApplication2\Debug\MFCApplication2.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"H:\Прога MFC\03.06.16\MFCApplication2\Debug\MFCApplication2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"H:\Прога MFC\03.06.16\MFCApplication2\Debug\MFCApplication2.lib" /MACHINE:X86 Debug\MFCApplication2.res
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Вадим\Documents\GitHub\MFC\Debug\MFCApplication2.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"C:\Users\Вадим\Documents\GitHub\MFC\Debug\MFCApplication2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Вадим\Documents\GitHub\MFC\Debug\MFCApplication2.lib" /MACHINE:X86 Debug\MFCApplication2.res
          Debug\C2DMyPoint.obj
          Debug\ChildView.obj
          Debug\CDlgProperties.obj
@@ -38,9 +31,9 @@
          Debug\MFCApplication2.obj
          Debug\My2DObject13.obj
          Debug\stdafx.obj
-         MFCApplication2.vcxproj -> H:\Прога MFC\03.06.16\MFCApplication2\Debug\MFCApplication2.exe
-     1>Сборка проекта "H:\Прога MFC\03.06.16\MFCApplication2\MFCApplication2\MFCApplication2.vcxproj" завершена (целевые объекты Build).
+         MFCApplication2.vcxproj -> C:\Users\Вадим\Documents\GitHub\MFC\Debug\MFCApplication2.exe
+     1>Сборка проекта "C:\Users\Вадим\Documents\GitHub\MFC\MFCApplication2\MFCApplication2.vcxproj" завершена (целевые объекты Build).
 
 Сборка успешно завершена.
 
-Затраченное время: 00:01:28.64
+Затраченное время: 00:00:07.63
